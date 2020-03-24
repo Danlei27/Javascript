@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+	<style>
+		body{
+			/*background-color:black;*/
+		}
+		p{
+			/*color:white;*/
+			font:30pt Arial;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		var n1 = 5
+		var n2 = Number(window.prompt("Soma um número com 5:"))
+		document.write(`<p align="center">número digitado foi ${n2}, somado com 5 = ${Number.parseInt(n2) + n1} Int!<p>`)
+		document.write(`<p align="center">${Number(n2 + n1).toFixed(1)} Float<p>`)
+		document.write(`<p align="center">Fixando 4 digitos depois do ponto ${n2.toFixed(4)}</p>`)
+
+		var real = 1545.5
+		var conv = real.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})
+		document.write(conv)
+	</script>
+
+</body>
+</html>

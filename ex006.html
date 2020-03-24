@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>js-6</title>
+  	<style>
+  		
+  	</style>
+  </head>
+  <body>
+  	<h1>Curso em video</h1>
+  	<p>Curso de javascript</p>
+    <h2 id="tit">Uso do DOM</h2>
+    <p  id="para">Document object model</p>
+    <h3 name="sa">estou programando</h3>
+    <font type="text" class="meu">Desenvolvendo meu site</font> 
+    <script>
+    	var r1 = window.document.getElementsByTagName('p')[0]
+    	var h =  window.document.getElementsByTagName('h1')[0]
+    	var b =  window.document.getElementsByTagName('body')[0]
+      var h2 = window.document.getElementById('tit')
+      var p2 = window.document.getElementById('para')
+    	var p =  window.document.getElementsByTagName('p')[0]
+      var m =  window.document.querySelector('font.meu')
+      document.write(r1.innerText)
+
+      h.style.color = 'blue'
+    	h.style.background = 'black'
+      p2.style.color = 'brown'
+    	p.style.color = 'orange'
+      p.style.background = 'green'
+    	b.style.background = 'gray'
+      h2.style.color = 'red'
+      m.style.background = 'orange'
+
+    </script>	
+  </body>
+</html>

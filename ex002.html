@@ -1,0 +1,36 @@
+<html lag="pt=BR">
+	<head>
+		<meta charset="UTF-8">
+		<title>js</title>
+		<style>
+			p{
+				color:white;
+				font:35pt Arial;
+			}
+			body{
+				background-color:darkblue;
+			}
+			#green{
+				color:green;
+			}
+			#yellow{
+				color:yellow;
+			}
+			strong{
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="green">javascript é uma liguagem de programação poderosa!</p>
+		<script>
+			var nome = "Danlei"
+			document.write("<p id='yellow'>Hello</p>")
+			document.write(`<p>hello ${nome}<p>`)
+			document.write(`Seu nome em letras maiúsculas é: <strong>${nome.toUpperCase()}</strong><br>`)
+			document.write(`Em letras minúsculas: <strong>${nome.toLowerCase()}</strong><br>` )
+			document.write(`E possui ${nome.length} letras<br>`)
+			document.write(`Do tipo ${typeof(nome)}`)
+		</script>
+	</body>
+</html>

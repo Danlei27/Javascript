@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+     <head>
+     	<meta charset="UTF-8">
+     	<title>js-7</title>
+     	<style>
+     		div#area{
+     			color:white;
+     			font-size:40px;
+     			background-color:green;
+     			width:200px;
+     			height:200px;
+     			line-height:200px;
+     			text-align:center;
+     		}
+     	</style>
+     </head>	
+     <body>
+     	<!-- <div id="area" onclick="clicar()"  onmouseenter="entrar()" onmouseout="sair()" > ou -->
+     	<div id="area">
+     		Interaja..
+     	</div> 
+     	<script>
+     		var a = window.document.getElementById('area')
+     		a.addEventListener('click', clicar)/*segundo opc*/
+     		a.addEventListener('mouseenter', entrar)/*segundo opc*/
+     		a.addEventListener('mouseout', sair)/*segundo opc*/
+     		
+     		function clicar(){ 
+     			a.innerText = 'clicou!'
+     			a.style.background = 'red'
+     		}
+     		function entrar(){
+     			a.innerText = 'entrou!'
+     		}
+     		function sair(){
+     			a.innerText = 'saiu!'
+     			a.style.background = 'green'
+     		}
+
+     	</script>
+     </body>
+</html>
