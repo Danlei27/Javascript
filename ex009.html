@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>js-9</title>
+</head>
+<body>
+	<h1>Sistema de Multas</h1>
+   	 Velocidade do carro:<input type="text" onclick="reset()" id="vel">
+   	 <input  id="z" type="button" value="verificar" onclick="ver()">
+   	 <div id="res">
+   	 	
+   	 </div>
+    <script>
+	  function ver() {
+   	    var v = window.document.querySelector('input#vel')
+   	    var r = window.document.querySelector('div#res')
+   	    var vel = Number(v.value)
+   	    var zz = window.document.querySelector('input#z')
+  		
+	        r.innerHTML += `<p>Sua velocidade atual é de ${vel}km/h</p>`
+
+  		if (vel  > 60){
+	  	    r.innerHTML += `<p>Você ultrapassou o limite de velocidade!<strong>Multado!</strong></p>`
+	    }
+	    r.innerHTML +=`<p>Dirija sempre com o cinto de segurança!</p>`
+	   }
+	    		
+	   
+   </script>
+</body>
+</html>
