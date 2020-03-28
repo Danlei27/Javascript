@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Site-beta</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<h1>Verficador de Idade</h1>
+	<section>
+		<div>
+			Ano de Nascimento:<input type="Number" id="nas" min="0" onclick="reset()">
+		</div>
+		<div>
+			Sexo:<label>Masculino
+					<input type="radio" name="sex">
+				</label>     
+				 <label>Feminino
+					<input type="radio" name="sex">
+				 </label>
+				</div>
+				<input type="button" value="verificar"  onclick="carregar()">
+				<p id="res"></p>
+	</section>
+	<footer>
+		<p>&copyCurso em video</p>
+	</footer>
+
+  <script src="script-site.js"></script>
+</body>
+</html>
