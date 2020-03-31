@@ -8,7 +8,8 @@ function listar(){
     var list = window.document.querySelector('select#listar')
     var nums = window.document.querySelector('input#num')
     var n = Number(nums.value)
-    exibir.innerHTML = ''
+    nums.value = ''
+    exibir.innerHTML = null
     if (n <= 100 && n >= 1){    
         if (ln.indexOf(n) < 0 ){
             ln.push(n)
@@ -31,7 +32,7 @@ function listar(){
     }else{
         window.alert('valor não está entre 1 e 100')        
     }
-}
+}  
 function info(){
     var exibir = window.document.querySelector('div#exibir')
     if(ln.length == 0){
