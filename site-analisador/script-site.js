@@ -9,7 +9,8 @@ function listar(){
     var nums = window.document.querySelector('input#num')
     var n = Number(nums.value)
     nums.value = ''
-    exibir.innerHTML = null
+    exibir.innerHTML = ''
+    nums.focus()
     if (n <= 100 && n >= 1){    
         if (ln.indexOf(n) < 0 ){
             ln.push(n)
